@@ -1,35 +1,31 @@
-# Casino Number Guessing Game
+# Casino Number Guessing
 
-Console number-guessing game with a virtual betting balance.
+Place virtual bets and guess the randomly selected number from 1 to 10.
 
-This repository contains the original files from a supplied collection, preserved without changing the source code.
+## Run in your browser (no setup)
 
-## Contents
+**Open [`run-in-browser.html`](run-in-browser.html)** or double-click [`docs/index.html`](docs/index.html) after extracting the repository. You can also deploy the `docs/` folder to any static host.
 
-- `casino-game-number-guessing-game.cpp`
+> The browser playground is an independently written **JavaScript adaptation** of this repository's original C++ logic. It is not a C++ interpreter or WebAssembly binary. Original C++ sources are retained unchanged, and the HTML, CSS and JS demo is immediately usable offline.
 
-## Build notes
+### Static GitHub Pages
 
-### Modern compiler variant
-The file `casino-game-number-guessing-game.cpp` passed a **syntax-only C++17 compiler check** using `g++` in the packaging environment. To compile it with GCC:
+Go to **Settings → Pages → Build and deployment → Deploy from a branch**; choose `main` and `/docs`, then Save. Your site's intended address is `https://sharanyapal.github.io/cpp-casino-number-guessing/` after GitHub confirms a successful deployment.
 
-```bash
-g++ -std=c++17 "casino-game-number-guessing-game.cpp" -o app
-./app
-```
+The previous WebAssembly GitHub Actions workflow is not required for this standalone browser build. The included bulk upload script removes just that previous demo workflow and the superseded `web/` adapter from the **eight named repositories**, without deleting other project files.
 
-This is a compile check, **not** a functional test. Some programs write relative `.DAT` files; run them in an appropriate working directory.
+### Original C++ source
 
-## Notes
+- [casino-game-number-guessing-game.cpp](casino-game-number-guessing-game.cpp)
+- All other historical C++, data and document files are kept unchanged.
 
-- The `.DAT` files (where present) are historical sample records included with the source, **not** Git LFS requirements. Review their contents before making this repo public.
-- `.doc` files (where present) are archived output screenshots/examples, not modern documentation.
-- Original author/contributor names and historical metadata may appear in the supplied files. No new ownership or open-source license is claimed. Check redistribution rights before public release.
-- Code is provided as-is. No claims of production security or cross-platform compatibility.
+### Browser features
 
+- Interactive terminal-style output with keyboard input, restart, and downloadable transcript
+- Games follow the original scoring, turns and rule logic
+- Data apps use `localStorage` for records within the same browser, replacing local `.DAT` files; records can be cleared explicitly
+- Files: `docs/index.html`, `docs/style.css`, `docs/terminal.js`, `docs/program.js`
 
-## Run original C++ in your browser
+### Note
 
-This repository includes an [interactive WebAssembly console](https://sharanyapal.github.io/cpp-casino-number-guessing/). It compiles the original C++ source, with only browser/DOS compatibility adapters under `web/`. The original source files remain unchanged.
-
-GitHub Actions builds and deploys the demo on changes to `main`. To enable the live site, use **Settings → Pages → Build and deployment → GitHub Actions**. Record files are temporary and reset on browser refresh.
+This repository contains archived, third-party classroom-style C++ examples from a previously supplied collection. Review attribution and redistribution rights before publishing as your own original work.
