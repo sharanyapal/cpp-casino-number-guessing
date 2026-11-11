@@ -1,3 +1,46 @@
+<div align="center">
+
+# Casino Number Guessing
+
+**Risk, random numbers and the thrill of a simple guess.**
+
+<sub>CLASSIC C++ &nbsp; • &nbsp; Console game &nbsp; • &nbsp; Console application</sub>
+
+</div>
+
+---
+
+## What this project explores
+
+Place virtual bets and guess the randomly selected number from 1 to 10.
+
+**Try this:** Follow a guessing round, its stake and the balance calculation.
+
+## Source & structure
+
+| Path | Description |
+|---|---|
+| [`casino-game-number-guessing-game.cpp`](./casino-game-number-guessing-game.cpp) | Original C++ source code |
+| [`docs`](./docs) | Original project asset / directory |
+| [`run-in-browser.html`](./run-in-browser.html) | Original project asset / directory |
+
+
+## Running the C++ version
+
+The checked-in source includes historical console programs. Some variants use Turbo C++ / DOS-specific headers and APIs, so **a modern C++ compiler may require porting or a compatibility layer**. Open the original source to find its entry point; compile with a compiler compatible with the program's dialect.
+
+## Learning objectives
+
+- Trace the input/output cycle of a stateful console program.
+- Inspect the program's control flow and data handling.
+- Identify portability improvements needed for modern compilers or browsers.
+
+## Disclaimer
+
+A programming exercise, not a production console game system. Use invented test records and do not store confidential information.
+
+<details><summary><strong>Original project notes</strong></summary>
+
 # Casino Number Guessing
 
 Place virtual bets and guess the randomly selected number from 1 to 10.
@@ -29,3 +72,9 @@ The previous WebAssembly GitHub Actions workflow is not required for this standa
 ### Note
 
 This repository contains archived, third-party classroom-style C++ examples from a previously supplied collection. Review attribution and redistribution rights before publishing as your own original work.
+
+</details>
+
+---
+
+<sub>Part of the [C++ project collection](https://github.com/sharanyapal?tab=repositories).</sub>
