@@ -26,3 +26,10 @@ This is a compile check, **not** a functional test. Some programs write relative
 - `.doc` files (where present) are archived output screenshots/examples, not modern documentation.
 - Original author/contributor names and historical metadata may appear in the supplied files. No new ownership or open-source license is claimed. Check redistribution rights before public release.
 - Code is provided as-is. No claims of production security or cross-platform compatibility.
+
+
+## Run original C++ in your browser
+
+This repository includes an [interactive WebAssembly console](https://sharanyapal.github.io/cpp-casino-number-guessing/). It compiles the original C++ source, with only browser/DOS compatibility adapters under `web/`. The original source files remain unchanged.
+
+GitHub Actions builds and deploys the demo on changes to `main`. To enable the live site, use **Settings → Pages → Build and deployment → GitHub Actions**. Record files are temporary and reset on browser refresh.
